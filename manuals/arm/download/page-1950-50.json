@@ -1,12 +1,1352 @@
 {
-  "totalCount" : 5496,
-  "totalCountFiltered" : 5496,
-  "duration" : 556,
-  "indexDuration" : 481,
-  "requestDuration" : 529,
-  "searchUid" : "4880b339-deda-4f21-b393-3d29b6bbeb5a",
+  "totalCount" : 5507,
+  "totalCountFiltered" : 5507,
+  "duration" : 652,
+  "indexDuration" : 542,
+  "requestDuration" : 595,
+  "searchUid" : "90e7f82f-3c7b-435e-af3e-e82ee8bf71f8",
   "pipeline" : "Docs_Hub",
   "apiVersion" : 2,
+  "basicExpression" : null,
+  "advancedExpression" : "@latest_version==true",
+  "largeExpression" : null,
+  "constantExpression" : "@source==prd-document-service-index",
+  "disjunctionExpression" : "@latest_version==true (@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e OR @permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9 OR @permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b OR @permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762 OR @permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a)",
+  "mandatoryExpression" : null,
+  "userIdentities" : [ {
+    "name" : "anonymous@coveo.com",
+    "provider" : "Email Security Provider",
+    "type" : "User"
+  } ],
+  "rankingExpressions" : [ {
+    "expression" : "@content_type==technicalReferenceManual",
+    "modifier" : 100,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@content_type==archDoc",
+    "modifier" : 100,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@content_type==guide",
+    "modifier" : 100,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@published>=today-90d",
+    "modifier" : 50,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@published>=today-360d",
+    "modifier" : 25,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+    "modifier" : 16,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+    "modifier" : 14,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==guide",
+    "modifier" : 10,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+    "modifier" : 9,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiesproducts==architectures",
+    "modifier" : 8,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+    "modifier" : 250,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+    "modifier" : 246,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+    "modifier" : 165,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762",
+    "modifier" : 107,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+    "modifier" : 104,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  } ],
+  "rankingExpressionGroups" : [ ],
+  "topResults" : [ {
+    "expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 250,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 246,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 165,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 107,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 104,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  } ],
+  "executionReport" : {
+    "duration" : 661,
+    "children" : [ {
+      "name" : "RequestId",
+      "description" : "The id correlating logs for this request",
+      "duration" : 0,
+      "X-Request-ID" : "aa00e6a5-2507-417e-a1ae-c718912e6177"
+    }, {
+      "name" : "Organization ID",
+      "description" : "Organization ID",
+      "duration" : 1,
+      "coveo_organization" : "armlimitedproductionubhpo2y4"
+    }, {
+      "name" : "PerformAuthentication",
+      "description" : "Perform authentication",
+      "duration" : 0,
+      "configured" : {
+        "primary" : "CloudToken"
+      },
+      "result" : {
+        "userIds" : [ {
+          "name" : "anonymous@coveo.com",
+          "kind" : "User",
+          "provider" : "Email Security Provider",
+          "infos" : { }
+        } ],
+        "roles" : [ "queryExecutor" ],
+        "queryRestrictions" : {
+          "pipeline" : null,
+          "filter" : null
+        },
+        "userGroups" : [ ]
+      },
+      "children" : [ {
+        "name" : "ResolveProviderAuthentication",
+        "description" : "Resolve authentication of provider: CloudToken",
+        "duration" : 0,
+        "result" : {
+          "userIds" : [ {
+            "name" : "anonymous@coveo.com",
+            "kind" : "User",
+            "provider" : "Email Security Provider",
+            "infos" : { }
+          } ],
+          "roles" : [ "queryExecutor" ],
+          "queryRestrictions" : {
+            "pipeline" : null,
+            "filter" : null
+          },
+          "userGroups" : [ ]
+        }
+      } ]
+    }, {
+      "name" : "PerformAuthentication",
+      "description" : "Perform authentication",
+      "duration" : 0,
+      "configured" : {
+        "secondary" : [ "sso" ],
+        "mandatory" : [ ]
+      },
+      "result" : {
+        "userIds" : [ {
+          "name" : "anonymous@coveo.com",
+          "kind" : "User",
+          "provider" : "Email Security Provider",
+          "infos" : { }
+        } ],
+        "roles" : [ "queryExecutor" ],
+        "queryRestrictions" : {
+          "pipeline" : null,
+          "filter" : null
+        },
+        "userGroups" : [ ]
+      },
+      "children" : [ {
+        "name" : "MergeAuthentications",
+        "description" : "Merge authentications (if needed)",
+        "duration" : 0,
+        "result" : {
+          "userIds" : [ {
+            "name" : "anonymous@coveo.com",
+            "kind" : "User",
+            "provider" : "Email Security Provider",
+            "infos" : { }
+          } ],
+          "roles" : [ "queryExecutor" ],
+          "queryRestrictions" : {
+            "pipeline" : null,
+            "filter" : null
+          },
+          "userGroups" : [ ]
+        }
+      } ]
+    }, {
+      "name" : "ResolveContext",
+      "description" : "Resolve context",
+      "duration" : 1,
+      "result" : {
+        "userAgent" : {
+          "raw" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0",
+          "browser" : [ "firefox" ],
+          "device" : [ "desktop", "pc", "mac", "osx" ],
+          "os" : [ "osx", "mac" ]
+        },
+        "searchHub" : "Docs_hub",
+        "tab" : null,
+        "referrer" : "",
+        "locale" : "en",
+        "context" : { },
+        "expressions" : {
+          "q" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "aq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "cq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "dq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "lq" : {
+            "original" : "",
+            "parsed" : null
+          }
+        },
+        "enableDuplicateFiltering" : false,
+        "filterField" : "@document_id",
+        "filterFieldRange" : 3,
+        "parentField" : "@itemid",
+        "childField" : "@parentitem",
+        "recommendation" : null,
+        "lowercaseOperators" : false,
+        "sortCriteria" : [ "relevancy" ]
+      }
+    }, {
+      "name" : "ResolvePipeline",
+      "description" : "Resolve pipeline",
+      "duration" : 1,
+      "result" : {
+        "pipeline" : "Docs_Hub",
+        "pipelineId" : "579c6cdd-a8d6-4825-aab1-6d1c1100cb69",
+        "pipelineHash" : "8eba147ec3b0d7a79dbbb3e6fd72f5b9",
+        "splitTest" : null,
+        "statementGroups" : [ ]
+      }
+    }, {
+      "name" : "ResolveContext",
+      "description" : "Resolve context",
+      "duration" : 1,
+      "result" : {
+        "userAgent" : {
+          "raw" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0",
+          "browser" : [ "firefox" ],
+          "device" : [ "desktop", "pc", "mac", "osx" ],
+          "os" : [ "osx", "mac" ]
+        },
+        "searchHub" : "Docs_hub",
+        "tab" : null,
+        "referrer" : "",
+        "locale" : "en",
+        "context" : { },
+        "expressions" : {
+          "q" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "aq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "cq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "dq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "lq" : {
+            "original" : "",
+            "parsed" : null
+          }
+        },
+        "enableDuplicateFiltering" : false,
+        "filterField" : "@document_id",
+        "filterFieldRange" : 3,
+        "parentField" : "@itemid",
+        "childField" : "@parentitem",
+        "recommendation" : null,
+        "lowercaseOperators" : false,
+        "sortCriteria" : [ "relevancy" ]
+      }
+    }, {
+      "name" : "ApplyQueryParamOverrideFeature",
+      "description" : "Apply 'queryParamOverride' rules",
+      "duration" : 0,
+      "applied" : [ ]
+    }, {
+      "name" : "ResolveContext",
+      "description" : "Resolve context",
+      "duration" : 1,
+      "result" : {
+        "userAgent" : {
+          "raw" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0",
+          "browser" : [ "firefox" ],
+          "device" : [ "desktop", "pc", "mac", "osx" ],
+          "os" : [ "osx", "mac" ]
+        },
+        "searchHub" : "Docs_hub",
+        "tab" : null,
+        "referrer" : "",
+        "locale" : "en",
+        "context" : { },
+        "expressions" : {
+          "q" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "aq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "cq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "dq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "lq" : {
+            "original" : "",
+            "parsed" : null
+          }
+        },
+        "enableDuplicateFiltering" : false,
+        "filterField" : "@document_id",
+        "filterFieldRange" : 3,
+        "parentField" : "@itemid",
+        "childField" : "@parentitem",
+        "recommendation" : null,
+        "lowercaseOperators" : false,
+        "sortCriteria" : [ "relevancy" ]
+      }
+    }, {
+      "name" : "PreprocessQuery",
+      "description" : "Preprocess query",
+      "duration" : 3,
+      "result" : {
+        "in" : {
+          "q" : null,
+          "aq" : "@latest_version==true",
+          "lq" : null,
+          "cq" : "@source==prd-document-service-index",
+          "dq" : null,
+          "mq" : null,
+          "parentField" : "@itemid",
+          "childField" : "@parentitem",
+          "filterField" : "@document_id",
+          "filterFieldRange" : 3,
+          "enableDuplicateFiltering" : false,
+          "numberOfResults" : 50,
+          "queryFunctions" : [ ],
+          "rankingFunctions" : [ ],
+          "sortCriteria" : [ "relevancy" ],
+          "rankingExpressions" : [ {
+            "expression" : "@content_type==technicalReferenceManual",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==archDoc",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==guide",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-90d",
+            "modifier" : 50,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-360d",
+            "modifier" : 25,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+            "modifier" : 16,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+            "modifier" : 14,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==guide",
+            "modifier" : 10,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+            "modifier" : 9,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiesproducts==architectures",
+            "modifier" : 8,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          } ],
+          "rankingOverrides" : [ ]
+        },
+        "out" : {
+          "q" : null,
+          "aq" : "@latest_version==true",
+          "lq" : null,
+          "cq" : "@source==prd-document-service-index",
+          "dq" : null,
+          "mq" : null,
+          "parentField" : "@itemid",
+          "childField" : "@parentitem",
+          "filterField" : "@document_id",
+          "filterFieldRange" : 3,
+          "enableDuplicateFiltering" : false,
+          "numberOfResults" : 50,
+          "queryFunctions" : [ ],
+          "rankingFunctions" : [ ],
+          "sortCriteria" : [ "relevancy" ],
+          "rankingExpressions" : [ {
+            "expression" : "@content_type==technicalReferenceManual",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==archDoc",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==guide",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-90d",
+            "modifier" : 50,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-360d",
+            "modifier" : 25,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+            "modifier" : 16,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+            "modifier" : 14,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==guide",
+            "modifier" : 10,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+            "modifier" : 9,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiesproducts==architectures",
+            "modifier" : 8,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          } ],
+          "rankingOverrides" : [ ]
+        }
+      },
+      "children" : [ {
+        "name" : "ApplyFilterFeature",
+        "description" : "Apply 'filter' rules",
+        "duration" : 0,
+        "applied" : [ {
+          "type" : "cq",
+          "expressions" : [ "@source==\"prd-document-service-index\"" ]
+        }, {
+          "type" : "aq",
+          "expressions" : [ "@latest_version==\"true\"" ]
+        } ]
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "aq",
+          "in" : "@latest_version==\"true\"",
+          "out" : "@latest_version==\"true\""
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "cq",
+          "in" : "@source==\"prd-document-service-index\"",
+          "out" : "@source==\"prd-document-service-index\""
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "ApplyRankingFeature",
+        "description" : "Apply 'ranking' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@content_type==technicalReferenceManual",
+          "out" : "@content_type==technicalReferenceManual"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@content_type==archDoc",
+          "out" : "@content_type==archDoc"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@content_type==guide",
+          "out" : "@content_type==guide"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@published>=today-90d",
+          "out" : "@published>=today-90d"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@published>=today-360d",
+          "out" : "@published>=today-360d"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "ApplyTopResultFeature",
+        "description" : "Apply 'top' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      }, {
+        "name" : "ApplyRankingWeightFeature",
+        "description" : "Apply 'rankingweight' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      }, {
+        "name" : "CallingRevealTopClicks",
+        "description" : "Calling 'topClicks' reveal service",
+        "duration" : 1,
+        "config" : {
+          "model" : "armlimitedproductionubhpo2y4_topclicks_0e95c60e_7d3a_415d_984f_679c6b26da9c",
+          "engineVersion" : "~2|~3",
+          "modifier" : 250,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "useRefinedQuery" : false,
+          "maxResults" : 5,
+          "cacheMaximumAge" : "PT10S"
+        },
+        "basicQueryKeywords" : [ ],
+        "largeQueryKeywords" : [ ],
+        "userId" : "anonymous@coveo.com",
+        "actionHistories" : [ ],
+        "userContext" : { },
+        "response" : {
+          "source" : "cache",
+          "predictions" : [ {
+            "document" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+            "score" : 1.0
+          }, {
+            "document" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+            "score" : 0.9868198238352108
+          }, {
+            "document" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+            "score" : 0.6602627645770602
+          }, {
+            "document" : "@permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762",
+            "score" : 0.4317409016979602
+          }, {
+            "document" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+            "score" : 0.41688831213733746
+          } ],
+          "refinedQueries" : [ ],
+          "debug" : {"requestId":null,"responseId":"50962e6e-317a-44d3-bba2-7b1df2c1db82","modelInfo":"{\"modelId\":\"armlimitedproductionubhpo2y4_topclicks_0e95c60e_7d3a_415d_984f_679c6b26da9c\",\"modelName\":\"0e95c60e_7d3a_415d_984f_679c6b26da9c\",\"version\":\"3.45.2\",\"environment\":\"prd\",\"org\":\"armlimitedproductionubhpo2y4\",\"modelVersion\":\"3.45.1667683138\",\"createdDate\":\"2022-11-05T21:58:07.825Z\",\"modelSize\":\"23177\"}","queryParams":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"wordSelection\":\"\",\"lq\":\"\",\"lqWeight\":0.75,\"selectedFacets\":[]}","updatedQueryParameters":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"wordSelection\":\"\",\"lq\":\"\",\"lqWeight\":0.75,\"selectedFacets\":[]}","executionLog":["Context keys not found: originLevel3","Matched user context(s) in model: ."]}
+        }
+      }, {
+        "name" : "EvaluatingTopClicks",
+        "description" : "Evaluate 'topClicks' reveal response",
+        "duration" : 0,
+        "topResults" : [ {
+          "expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 250,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 246,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 165,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 107,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 104,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        } ],
+        "refinedQueries" : [ ]
+      }, {
+        "name" : "FacetSense",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0
+      }, {
+        "name" : "FacetSense",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0
+      }, {
+        "name" : "CallingRevealFacetSense",
+        "description" : "Calling 'facetSense' reveal service",
+        "duration" : 1,
+        "config" : {
+          "customQueryParameters" : {
+            "automaticSelection" : {
+              "isEnabled" : true
+            },
+            "rankingBoost" : {
+              "isEnabled" : true
+            },
+            "facetAutoSelect" : { },
+            "facetOrdering" : {
+              "isEnabled" : true
+            },
+            "facetValueOrdering" : {
+              "isEnabled" : true
+            }
+          },
+          "cacheMaximumAge" : "PT10S"
+        },
+        "basicQueryKeywords" : [ ],
+        "userId" : "anonymous@coveo.com",
+        "selectedFacets" : [ ],
+        "excludedFacets" : [ ],
+        "actionHistories" : [ ],
+        "userContext" : { },
+        "response" : {
+          "facetSenseResults" : {
+            "facetOrdering" : [ {
+              "field" : "navigationhierarchiescontenttype",
+              "score" : 2.5034475658825266
+            }, {
+              "field" : "navigationhierarchiesproducts",
+              "score" : 1.9326983701888336
+            }, {
+              "field" : "navigationhierarchiesaudience",
+              "score" : 0.28291418232455967
+            }, {
+              "field" : "navigationhierarchiestopics",
+              "score" : 0.24641916054959534
+            } ],
+            "valuesOrdering" : [ {
+              "field" : "navigationhierarchiescontenttype",
+              "values" : [ {
+                "value" : "technical reference manual",
+                "score" : 1.0
+              }, {
+                "value" : "architecture document",
+                "score" : 0.8943403014871667
+              }, {
+                "value" : "guide",
+                "score" : 0.6373574515980754
+              }, {
+                "value" : "user guide",
+                "score" : 0.5871784681870641
+              }, {
+                "value" : "reference guide",
+                "score" : 0.3867173712038522
+              }, {
+                "value" : "application note",
+                "score" : 0.3120714523194476
+              }, {
+                "value" : "knowledge base article",
+                "score" : 0.30064651888988053
+              }, {
+                "value" : "datasheet",
+                "score" : 0.2761295855432227
+              } ]
+            }, {
+              "field" : "navigationhierarchiesproducts",
+              "values" : [ {
+                "value" : "architectures",
+                "score" : 0.49433943291235954
+              }, {
+                "value" : "architectures;learn the architecture",
+                "score" : 0.48157761848648245
+              }, {
+                "value" : "architectures;cpu architecture;a-profile;armv8-a",
+                "score" : 0.4529747362212445
+              }, {
+                "value" : " ip products;processors",
+                "score" : 0.3443434432521748
+              }, {
+                "value" : "architectures;cpu architecture",
+                "score" : 0.34137433664531175
+              }, {
+                "value" : " architectures",
+                "score" : 0.3273686138183408
+              }, {
+                "value" : "architectures;system architecture;amba",
+                "score" : 0.3253469218020443
+              }, {
+                "value" : " architectures;cpu architecture",
+                "score" : 0.3161815799157784
+              } ]
+            }, {
+              "field" : "navigationhierarchiesaudience",
+              "values" : [ {
+                "value" : "software developers",
+                "score" : 0.361934384024906
+              }, {
+                "value" : "embedded software developers",
+                "score" : 0.25627304390088257
+              }, {
+                "value" : "kernel developers",
+                "score" : 0.24036207164626494
+              } ]
+            }, {
+              "field" : "navigationhierarchiestopics",
+              "values" : [ {
+                "value" : "armv8",
+                "score" : 0.3942059155956531
+              }, {
+                "value" : "armv9",
+                "score" : 0.2684826443898176
+              } ]
+            } ],
+            "rankingBoost" : [ {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "technical reference manual",
+              "weight" : 0.3333333333333333
+            }, {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "architecture document",
+              "weight" : 0.2981134338290556
+            }, {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "guide",
+              "weight" : 0.21245248386602514
+            }, {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "user guide",
+              "weight" : 0.1957261560623547
+            }, {
+              "field" : "navigationhierarchiesproducts",
+              "value" : "architectures",
+              "weight" : 0.1647798109707865
+            } ],
+            "automaticSelection" : [ ],
+            "suggestions" : [ ]
+          },
+          "debug" : {"requestId":null,"responseId":"f70edec0-effb-4fbd-bea8-197b13356c49","modelInfo":"{\"modelId\":\"armlimitedproductionubhpo2y4_facetsense_a9c615fb_1f7d_4000_a8c3_89c5c059c9d1\",\"modelName\":\"a9c615fb_1f7d_4000_a8c3_89c5c059c9d1\",\"version\":\"1.29.2\",\"environment\":\"prd\",\"org\":\"armlimitedproductionubhpo2y4\",\"modelVersion\":\"1.29.1667646658\",\"createdDate\":\"2022-11-05T12:27:21.104Z\",\"modelSize\":\"12033\"}","queryParams":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{\"automaticSelection\":{\"isEnabled\":true},\"rankingBoost\":{\"isEnabled\":true},\"facetAutoSelect\":{},\"facetOrdering\":{\"isEnabled\":true},\"facetValueOrdering\":{\"isEnabled\":true}},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"selectedFacets\":[]}","updatedQueryParameters":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{\"automaticSelection\":{\"isEnabled\":true},\"rankingBoost\":{\"isEnabled\":true},\"facetAutoSelect\":{},\"facetOrdering\":{\"isEnabled\":true},\"facetValueOrdering\":{\"isEnabled\":true}},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"selectedFacets\":[]}","executionLog":["Matched user context(s) in model: .","Facet values with score below 0.2215343639626711 will be filtered out.","Missing facet type for field navigationhierarchiestopics and facet value microcontrollers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiestopics and facet value optimization is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiesaudience and facet value embedded software developers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiesaudience and facet value kernel developers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiesaudience and facet value soc designers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiesaudience and facet value linux developers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiesaudience and facet value hardware engineers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value architecture document is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value guide is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value user guide is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value software developer errata notice is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value white paper is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Facets with score below 0.1 will be filtered out.","Retrieving facet value suggestions from automatic suggestion candidates.","No facet value candidates available for field(s): "]}
+        }
+      }, {
+        "name" : "FacetSense",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0
+      }, {
+        "name" : "ApplyFacetSenseRankingExpressionsFeature",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0,
+        "applied" : [ {
+          "expressions" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+          "modifier" : "16"
+        }, {
+          "expressions" : "@navigationhierarchiescontenttype==\"architecture document\"",
+          "modifier" : "14"
+        }, {
+          "expressions" : "@navigationhierarchiescontenttype==guide",
+          "modifier" : "10"
+        }, {
+          "expressions" : "@navigationhierarchiescontenttype==\"user guide\"",
+          "modifier" : "9"
+        }, {
+          "expressions" : "@navigationhierarchiesproducts==architectures",
+          "modifier" : "8"
+        } ]
+      } ]
+    }, {
+      "name" : "BuildFacetSelectedValueOverride",
+      "description" : "Build query overrides based on selected facet selected values",
+      "duration" : 0,
+      "selectedFacets" : [ ],
+      "createdOverrides" : [ ]
+    }, {
+      "name" : "AddExistingQueryParametersToGroupByOverride",
+      "description" : "Add query overrides in the query to each Group By results",
+      "duration" : 0,
+      "queryExpressions" : {
+        "aq" : "@latest_version==true",
+        "cq" : "@source==prd-document-service-index"
+      },
+      "overridesFromExpressions" : [ ]
+    }, {
+      "name" : "PipelineResolveTriggers",
+      "description" : "Resolve triggers",
+      "duration" : 0,
+      "children" : [ {
+        "name" : "ApplyTriggerFeature",
+        "description" : "Apply 'trigger' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      } ]
+    }, {
+      "name" : "IndexOperationV8",
+      "description" : "Send query to index",
+      "duration" : 647,
+      "result" : {
+        "in" : {
+          "BasicExpression" : "@uri",
+          "AdvancedExpression" : "@latest_version==true",
+          "ConstantExpression" : "@source==prd-document-service-index",
+          "DisjunctionExpression" : "@latest_version==true (@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e OR @permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9 OR @permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b OR @permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762 OR @permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a)",
+          "FirstResult" : 1950,
+          "NumberOfResults" : 50,
+          "SortBy" : "Relevancy",
+          "SortByFields" : [ ],
+          "CustomFilter" : "@document_id",
+          "CustomFilterRange" : 3,
+          "ExcerptLength" : 200,
+          "SummaryLength" : 0,
+          "TimeZoneOffset" : null,
+          "EnableWildcards" : false,
+          "EnableQuestionMark" : false,
+          "EnableDidYouMean" : true,
+          "DisableLogging" : false,
+          "ParentFieldName" : "@itemid",
+          "ChildFieldName" : "@parentitem",
+          "EnableDuplicateFiltering" : false,
+          "ExtractFirstSentences" : true,
+          "EnableRankingInformation" : false,
+          "EnableQueryProfiling" : false,
+          "TimeZone" : "Asia/Shanghai",
+          "TimeOut" : 10,
+          "LanguageExpansion" : null,
+          "SpecifiedLanguages" : null,
+          "PreferredLanguage" : null,
+          "EnableMetatermSyntax" : false,
+          "BackgroundQuery" : false,
+          "RankingExpressions" : [ {
+            "Expression" : "@content_type==technicalReferenceManual",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 100
+          }, {
+            "Expression" : "@content_type==archDoc",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 100
+          }, {
+            "Expression" : "@content_type==guide",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 100
+          }, {
+            "Expression" : "@published>=today-90d",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 50
+          }, {
+            "Expression" : "@published>=today-360d",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 25
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 16
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 14
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==guide",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 10
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 9
+          }, {
+            "Expression" : "@navigationhierarchiesproducts==architectures",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 8
+          }, {
+            "Expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 250
+          }, {
+            "Expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 246
+          }, {
+            "Expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 165
+          }, {
+            "Expression" : "@permanentid=4d1a012b6ab858a0f2c22475b8fafb5f6b4eb770eb6fa244329c61636762",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 107
+          }, {
+            "Expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 104
+          } ],
+          "RankingFunctions" : [ ],
+          "QueryFunctions" : [ ],
+          "RankingOverrides" : [ ],
+          "Facets" : [ ],
+          "AutomaticFacetsRequest" : { }
+        },
+        "out" : {
+          "index" : "armlimitedproductionubhpo2y4-w180tn4p-Indexer-3-w32lvn2hmdesipqga2brijsaum",
+          "logEntryId" : "212532556209821571",
+          "serverTime" : 542,
+          "requestTime" : 595,
+          "totalCount" : 5507,
+          "totalCountFiltered" : 5507,
+          "groupByCount" : 0
+        }
+      }
+    }, {
+      "name" : "FacetResultPostProcessingEvaluationReport",
+      "description" : "Post process the result through the processors pipeline",
+      "duration" : 0,
+      "Index Scores" : [ ],
+      "children" : [ {
+        "name" : "FacetSense ML score assigning",
+        "description" : "Processing facet result: FacetSense ML score assigning",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Setting more values available",
+        "description" : "Processing facet result: Setting more values available",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Apply selection from request",
+        "description" : "Processing facet result: Apply selection from request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Adding optional facet IDs",
+        "description" : "Processing facet result: Adding optional facet IDs",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Freezing facet values if any",
+        "description" : "Processing facet result: Freezing facet values if any",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reordering values based on facet sense",
+        "description" : "Processing facet result: Reordering values based on facet sense",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Retaining selected values based on request",
+        "description" : "Processing facet result: Retaining selected values based on request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet range values based on sort criteria",
+        "description" : "Processing facet result: Reorder facet range values based on sort criteria",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values using custom sort",
+        "description" : "Processing facet result: Reorder facet values using custom sort",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values pushing selected values on top",
+        "description" : "Processing facet result: Reorder facet values pushing selected values on top",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Truncate extra values in request",
+        "description" : "Processing facet result: Truncate extra values in request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using index score",
+        "description" : "Processing facet result: Reorder facets using index score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using ML score",
+        "description" : "Processing facet result: Reorder facets using ML score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      } ]
+    }, {
+      "name" : "FacetResultPostProcessingEvaluationReport",
+      "description" : "Post process the result through the processors pipeline",
+      "duration" : 0,
+      "Index Scores" : [ ],
+      "children" : [ {
+        "name" : "FacetSense ML score assigning",
+        "description" : "Processing facet result: FacetSense ML score assigning",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Setting more values available",
+        "description" : "Processing facet result: Setting more values available",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Apply selection from request",
+        "description" : "Processing facet result: Apply selection from request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Adding optional facet IDs",
+        "description" : "Processing facet result: Adding optional facet IDs",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Freezing facet values if any",
+        "description" : "Processing facet result: Freezing facet values if any",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reordering values based on facet sense",
+        "description" : "Processing facet result: Reordering values based on facet sense",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Retaining selected values based on request",
+        "description" : "Processing facet result: Retaining selected values based on request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet range values based on sort criteria",
+        "description" : "Processing facet result: Reorder facet range values based on sort criteria",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values using custom sort",
+        "description" : "Processing facet result: Reorder facet values using custom sort",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values pushing selected values on top",
+        "description" : "Processing facet result: Reorder facet values pushing selected values on top",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Truncate extra values in request",
+        "description" : "Processing facet result: Truncate extra values in request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using index score",
+        "description" : "Processing facet result: Reorder facets using index score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using ML score",
+        "description" : "Processing facet result: Reorder facets using ML score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      } ]
+    } ]
+  },
   "index" : "armlimitedproductionubhpo2y4-w180tn4p-Indexer-3-w32lvn2hmdesipqga2brijsaum",
   "indexRegion" : "us-east-1",
   "indexToken" : "YXJtbGltaXRlZHByb2R1Y3Rpb251YmhwbzJ5NC13MTgwdG40cC1JbmRleGVyLTMtdzMybHZuMmhtZGVzaXBxZ2EyYnJpanNhdW0=",
@@ -20,6 +1360,429 @@
   "suggestedFacets" : [ ],
   "categoryFacets" : [ ],
   "results" : [ {
+    "title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation",
+    "uri" : "https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+    "printableUri" : "https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+    "clickUri" : "https://documentation-service.arm.com/static/5f881714f86e16515cdb7dd6",
+    "uniqueId" : "42.29000$https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+    "excerpt" : "All rights reserved. ... Release Information ... The summary table in section 2.2 identifies errata that have been fixed in each ... 04 Dec 2014: Changes in Document v3 ... Page ... 7 ... 9",
+    "firstSentences" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM –M7(TM975) ARM-EPM-064410 v3.0 Released Product Revision r0 Software Developers Errata Notice Copyright © 2014 ARM. All rights reserved. Non ...",
+    "summary" : null,
+    "flags" : "IsAttachment;HasHtmlVersion;SkipSentencesScoring",
+    "hasHtmlVersion" : true,
+    "hasMobileHtmlVersion" : false,
+    "score" : 0,
+    "percentScore" : 0.0,
+    "rankingInfo" : null,
+    "rating" : 0.0,
+    "isTopResult" : false,
+    "isRecommendation" : false,
+    "isUserActionView" : false,
+    "titleHighlights" : [ ],
+    "firstSentencesHighlights" : [ ],
+    "excerptHighlights" : [ ],
+    "printableUriHighlights" : [ ],
+    "summaryHighlights" : [ ],
+    "parentResult" : {
+      "title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation",
+      "uri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "printableUri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "clickUri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+      "uniqueId" : "42.29000$https://developer.arm.com/documentation/EPM064410/0300/en",
+      "excerpt" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF ... Click Download to view.",
+      "firstSentences" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF version. Click Download to view.",
+      "summary" : null,
+      "flags" : "HasHtmlVersion;SkipSentencesScoring",
+      "hasHtmlVersion" : true,
+      "hasMobileHtmlVersion" : false,
+      "score" : 0,
+      "percentScore" : 0.0,
+      "rankingInfo" : null,
+      "rating" : 0.0,
+      "isTopResult" : false,
+      "isRecommendation" : false,
+      "isUserActionView" : false,
+      "titleHighlights" : [ ],
+      "firstSentencesHighlights" : [ ],
+      "excerptHighlights" : [ ],
+      "printableUriHighlights" : [ ],
+      "summaryHighlights" : [ ],
+      "parentResult" : null,
+      "childResults" : [ ],
+      "totalNumberOfChildResults" : 0,
+      "absentTerms" : [ ],
+      "raw" : {
+        "systitle" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation ",
+        "document_number" : "EPM064410",
+        "document_version" : "0300",
+        "content_type" : "sden",
+        "systopparent" : "4503000",
+        "sysurihash" : "OxYBYKzT5zCo1Ozi",
+        "urihash" : "OxYBYKzT5zCo1Ozi",
+        "sysuri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+        "systransactionid" : 864277,
+        "is_confidential" : 0,
+        "z95xtemplatename" : "Document",
+        "validityscore" : 1.0,
+        "published" : 1595925217000,
+        "topparentid" : 4503000,
+        "z95xtemplate" : "f322b88bf5e04c4abe6274e9375c2ff6",
+        "created" : 1602754324000,
+        "navigationhierarchies" : [ "5eec6f69e24a5e02d07b2653|5eec6f69e24a5e02d07b2654|5fbba10b8e527a03a85ed247" ],
+        "documenttype" : "html",
+        "contentformat" : "PDFOnly",
+        "sysindexeddate" : 1649149711000,
+        "permanentid" : "b34d3b6826def08c2ab5e740169698e83e31194e130f71ba4945f9c0768f",
+        "syslanguage" : [ "English" ],
+        "itemid" : "5f881714f86e16515cdb7dd4",
+        "transactionid" : 864277,
+        "title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation ",
+        "products" : [ "CoreSight ETM-M7" ],
+        "date" : 1649149711000,
+        "confidentiality" : "Non-Confidential",
+        "document_id" : "EPM064410:0300:en",
+        "is_topic" : 0,
+        "navigationhierarchiesaudience" : [ "Silicon Specialists", "Hardware Engineers", "SoC Designers", "Embedded Software Developers" ],
+        "audience" : [ "siliconSpecialists", "hardwareEngineers", "socDesigners", "embeddedSoftwareDevelopers" ],
+        "product_quality" : "REL",
+        "sourcetype" : "Push",
+        "rowid" : 1649149711722443622,
+        "navigationhierarchiescontenttype" : "Software Developer Errata Notice",
+        "size" : 340,
+        "sysdocumenttype" : "html",
+        "clickableuri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+        "syssource" : "prd-document-service-index",
+        "orderingid" : 1649149457497,
+        "syssize" : 340,
+        "sysdate" : 1649149711000,
+        "haslayout" : "1",
+        "topparent" : "4503000",
+        "label_version" : "3.0",
+        "language_code" : "en",
+        "z95xpath" : [ "110d559fdea542ea9c1c8a5df7e70ef9", "ef82176369c34c2388bffd3138cd26f8" ],
+        "systopparentid" : 4503000,
+        "content_description" : "This document describes errata categorized by level of severity for the ARM CoreSight ETM-M7 Embedded Trace Macrocell.",
+        "wordcount" : 31,
+        "source" : "prd-document-service-index",
+        "navigationhierarchiesnames" : [ "CoreSight Debug and Trace|CoreSight Components|CoreSight ETM-M7" ],
+        "navigationhierarchiesproducts" : [ "IP Products", "IP Products|System IP", "IP Products|System IP|CoreSight Debug and Trace", "IP Products|System IP|CoreSight Debug and Trace|CoreSight Components" ],
+        "document_revision" : "0",
+        "collection" : "default",
+        "syssourcetype" : "Push",
+        "indexeddate" : 1649149711000,
+        "filetype" : "html",
+        "sysclickableuri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+        "templateid" : "f322b88bf5e04c4abe6274e9375c2ff6",
+        "sysfiletype" : "html",
+        "path" : "/EPM064410/0300/?lang=en",
+        "modified" : 1642518263000,
+        "latest_version" : "true",
+        "language" : [ "English" ],
+        "sysrowid" : 1649149711722443622,
+        "uri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+        "syscollection" : "default"
+      },
+      "Title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation",
+      "Uri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "PrintableUri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "ClickUri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+      "UniqueId" : "42.29000$https://developer.arm.com/documentation/EPM064410/0300/en",
+      "Excerpt" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF ... Click Download to view.",
+      "FirstSentences" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF version. Click Download to view."
+    },
+    "childResults" : [ {
+      "title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation",
+      "uri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "printableUri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "clickUri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+      "uniqueId" : "42.29000$https://developer.arm.com/documentation/EPM064410/0300/en",
+      "excerpt" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF ... Click Download to view.",
+      "firstSentences" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF version. Click Download to view.",
+      "summary" : null,
+      "flags" : "HasHtmlVersion;SkipSentencesScoring",
+      "hasHtmlVersion" : true,
+      "hasMobileHtmlVersion" : false,
+      "score" : 0,
+      "percentScore" : 0.0,
+      "rankingInfo" : null,
+      "rating" : 0.0,
+      "isTopResult" : false,
+      "isRecommendation" : false,
+      "isUserActionView" : false,
+      "titleHighlights" : [ ],
+      "firstSentencesHighlights" : [ ],
+      "excerptHighlights" : [ ],
+      "printableUriHighlights" : [ ],
+      "summaryHighlights" : [ ],
+      "parentResult" : null,
+      "childResults" : [ ],
+      "totalNumberOfChildResults" : 0,
+      "absentTerms" : [ ],
+      "raw" : {
+        "systitle" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation ",
+        "document_number" : "EPM064410",
+        "document_version" : "0300",
+        "content_type" : "sden",
+        "systopparent" : "4503000",
+        "sysurihash" : "OxYBYKzT5zCo1Ozi",
+        "urihash" : "OxYBYKzT5zCo1Ozi",
+        "sysuri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+        "systransactionid" : 864277,
+        "is_confidential" : 0,
+        "z95xtemplatename" : "Document",
+        "validityscore" : 1.0,
+        "published" : 1595925217000,
+        "topparentid" : 4503000,
+        "z95xtemplate" : "f322b88bf5e04c4abe6274e9375c2ff6",
+        "created" : 1602754324000,
+        "navigationhierarchies" : [ "5eec6f69e24a5e02d07b2653|5eec6f69e24a5e02d07b2654|5fbba10b8e527a03a85ed247" ],
+        "documenttype" : "html",
+        "contentformat" : "PDFOnly",
+        "sysindexeddate" : 1649149711000,
+        "permanentid" : "b34d3b6826def08c2ab5e740169698e83e31194e130f71ba4945f9c0768f",
+        "syslanguage" : [ "English" ],
+        "itemid" : "5f881714f86e16515cdb7dd4",
+        "transactionid" : 864277,
+        "title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation ",
+        "products" : [ "CoreSight ETM-M7" ],
+        "date" : 1649149711000,
+        "confidentiality" : "Non-Confidential",
+        "document_id" : "EPM064410:0300:en",
+        "is_topic" : 0,
+        "navigationhierarchiesaudience" : [ "Silicon Specialists", "Hardware Engineers", "SoC Designers", "Embedded Software Developers" ],
+        "audience" : [ "siliconSpecialists", "hardwareEngineers", "socDesigners", "embeddedSoftwareDevelopers" ],
+        "product_quality" : "REL",
+        "sourcetype" : "Push",
+        "rowid" : 1649149711722443622,
+        "navigationhierarchiescontenttype" : "Software Developer Errata Notice",
+        "size" : 340,
+        "sysdocumenttype" : "html",
+        "clickableuri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+        "syssource" : "prd-document-service-index",
+        "orderingid" : 1649149457497,
+        "syssize" : 340,
+        "sysdate" : 1649149711000,
+        "haslayout" : "1",
+        "topparent" : "4503000",
+        "label_version" : "3.0",
+        "language_code" : "en",
+        "z95xpath" : [ "110d559fdea542ea9c1c8a5df7e70ef9", "ef82176369c34c2388bffd3138cd26f8" ],
+        "systopparentid" : 4503000,
+        "content_description" : "This document describes errata categorized by level of severity for the ARM CoreSight ETM-M7 Embedded Trace Macrocell.",
+        "wordcount" : 31,
+        "source" : "prd-document-service-index",
+        "navigationhierarchiesnames" : [ "CoreSight Debug and Trace|CoreSight Components|CoreSight ETM-M7" ],
+        "navigationhierarchiesproducts" : [ "IP Products", "IP Products|System IP", "IP Products|System IP|CoreSight Debug and Trace", "IP Products|System IP|CoreSight Debug and Trace|CoreSight Components" ],
+        "document_revision" : "0",
+        "collection" : "default",
+        "syssourcetype" : "Push",
+        "indexeddate" : 1649149711000,
+        "filetype" : "html",
+        "sysclickableuri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+        "templateid" : "f322b88bf5e04c4abe6274e9375c2ff6",
+        "sysfiletype" : "html",
+        "path" : "/EPM064410/0300/?lang=en",
+        "modified" : 1642518263000,
+        "latest_version" : "true",
+        "language" : [ "English" ],
+        "sysrowid" : 1649149711722443622,
+        "uri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+        "syscollection" : "default"
+      },
+      "Title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation",
+      "Uri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "PrintableUri" : "https://developer.arm.com/documentation/EPM064410/0300/en",
+      "ClickUri" : "https://developer.arm.com/documentation/EPM064410/0300/?lang=en",
+      "UniqueId" : "42.29000$https://developer.arm.com/documentation/EPM064410/0300/en",
+      "Excerpt" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF ... Click Download to view.",
+      "FirstSentences" : "ARM Embedded Trace Macrocell CoreSight ETM-M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation This document is only available in a PDF version. Click Download to view."
+    } ],
+    "totalNumberOfChildResults" : 2,
+    "absentTerms" : [ ],
+    "raw" : {
+      "systitle" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation ",
+      "document_number" : "EPM064410",
+      "document_version" : "0300",
+      "content_type" : "sden",
+      "systopparent" : "4503000",
+      "sysauthor" : "davmar02",
+      "sysurihash" : "AJSQQZUOi0eGEJiz",
+      "urihash" : "AJSQQZUOi0eGEJiz",
+      "sysuri" : "https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+      "systransactionid" : 864277,
+      "is_confidential" : 0,
+      "validityscore" : 1.0,
+      "published" : 1595925217000,
+      "topparentid" : 4503000,
+      "numberofpages" : 15,
+      "sysconcepts" : "flush request ; applications ; patents ; ATB data ; trace streams ; power state ; ETM ; critical error ; third parties ; workarounds ; comparator ; implementations ; ATB instruction ; store exclusive ; Event elements ; exception entry",
+      "navigationhierarchies" : [ "5eec6f69e24a5e02d07b2653|5eec6f69e24a5e02d07b2654|5fbba10b8e527a03a85ed247" ],
+      "attachmentparentid" : 4503000,
+      "parentitem" : "5f881714f86e16515cdb7dd4",
+      "concepts" : "flush request ; applications ; patents ; ATB data ; trace streams ; power state ; ETM ; critical error ; third parties ; workarounds ; comparator ; implementations ; ATB instruction ; store exclusive ; Event elements ; exception entry",
+      "documenttype" : "pdf",
+      "isattachment" : "4503000",
+      "sysindexeddate" : 1649149713000,
+      "permanentid" : "156b640a684d48137feb1517a19695b839ff2010024c67f895ce53bd9374",
+      "syslanguage" : [ "English" ],
+      "itemid" : "5f881714f86e16515cdb7dd6",
+      "transactionid" : 864277,
+      "title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation ",
+      "date" : 1649149713000,
+      "confidentiality" : "Non-Confidential",
+      "document_id" : "EPM064410:0300:en",
+      "is_topic" : 1,
+      "navigationhierarchiesaudience" : [ "Silicon Specialists", "Hardware Engineers", "SoC Designers", "Embedded Software Developers" ],
+      "audience" : [ "siliconSpecialists", "hardwareEngineers", "socDesigners", "embeddedSoftwareDevelopers" ],
+      "product_quality" : "REL",
+      "sourcetype" : "Push",
+      "rowid" : 1649149713222472295,
+      "sysisattachment" : "4503000",
+      "navigationhierarchiescontenttype" : "Software Developer Errata Notice",
+      "sysattachmentparentid" : 4503000,
+      "size" : 108401,
+      "sysdocumenttype" : "pdf",
+      "clickableuri" : "https://documentation-service.arm.com/static/5f881714f86e16515cdb7dd6",
+      "syssource" : "prd-document-service-index",
+      "orderingid" : 1649149458871,
+      "syssize" : 108401,
+      "sysdate" : 1649149713000,
+      "topparent" : "4503000",
+      "author" : "davmar02",
+      "label_version" : "3.0",
+      "systopparentid" : 4503000,
+      "content_description" : "This document describes errata categorized by level of severity for the ARM CoreSight ETM-M7 Embedded Trace Macrocell.",
+      "wordcount" : 639,
+      "source" : "prd-document-service-index",
+      "navigationhierarchiesnames" : [ "CoreSight Debug and Trace|CoreSight Components|CoreSight ETM-M7" ],
+      "navigationhierarchiesproducts" : [ "IP Products", "IP Products|System IP", "IP Products|System IP|CoreSight Debug and Trace", "IP Products|System IP|CoreSight Debug and Trace|CoreSight Components" ],
+      "collection" : "default",
+      "syssourcetype" : "Push",
+      "indexeddate" : 1649149713000,
+      "filetype" : "pdf",
+      "sysclickableuri" : "https://documentation-service.arm.com/static/5f881714f86e16515cdb7dd6",
+      "sysfiletype" : "pdf",
+      "latest_version" : "true",
+      "language" : [ "English" ],
+      "sysrowid" : 1649149713222472295,
+      "uri" : "https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+      "syscollection" : "default"
+    },
+    "Title" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM M7(TM975) Product Revision r0 - Software Developers Errata Notice Documentation",
+    "Uri" : "https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+    "PrintableUri" : "https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+    "ClickUri" : "https://documentation-service.arm.com/static/5f881714f86e16515cdb7dd6",
+    "UniqueId" : "42.29000$https://developer.arm.com/documentation/EPM064410/0300/en/pdf/CoreSight_ETM-M7_SDEN_v3.0.pdf",
+    "Excerpt" : "All rights reserved. ... Release Information ... The summary table in section 2.2 identifies errata that have been fixed in each ... 04 Dec 2014: Changes in Document v3 ... Page ... 7 ... 9",
+    "FirstSentences" : "ARM Embedded Trace Macrocell CoreSightTM ETMTM –M7(TM975) ARM-EPM-064410 v3.0 Released Product Revision r0 Software Developers Errata Notice Copyright © 2014 ARM. All rights reserved. Non ..."
+  }, {
+    "title" : "BL51: Error L107 (Address Space Overflow) for ?STACK",
+    "uri" : "https://developer.arm.com/documentation/ka003848/1-0/en",
+    "printableUri" : "https://developer.arm.com/documentation/ka003848/1-0/en",
+    "clickUri" : "https://developer.arm.com/documentation/ka003848/1-0/?lang=en",
+    "uniqueId" : "42.29000$https://developer.arm.com/documentation/ka003848/1-0/en",
+    "excerpt" : "STACK segment in the IDATA linker command. For example: BL51 test.obj IDATA(?STACK)\\n This instructs the linker allocate memory ... TYPE BASE LENGTH RELOCATION SEGMENT NAME\\n ... STACK\\n",
+    "firstSentences" : "Article ID: KA003848 Applies To: C51 Development Tools Confidentiality: Customer Non-confidential Information in this article applies to: C51 Version 5 C51 Version 6 SYMPTOMS I've created a ...",
+    "summary" : null,
+    "flags" : "HasHtmlVersion;SkipSentencesScoring",
+    "hasHtmlVersion" : true,
+    "hasMobileHtmlVersion" : false,
+    "score" : 0,
+    "percentScore" : 0.0,
+    "rankingInfo" : null,
+    "rating" : 0.0,
+    "isTopResult" : false,
+    "isRecommendation" : false,
+    "isUserActionView" : false,
+    "titleHighlights" : [ ],
+    "firstSentencesHighlights" : [ ],
+    "excerptHighlights" : [ ],
+    "printableUriHighlights" : [ ],
+    "summaryHighlights" : [ ],
+    "parentResult" : null,
+    "childResults" : [ ],
+    "totalNumberOfChildResults" : 1,
+    "absentTerms" : [ ],
+    "raw" : {
+      "systitle" : "BL51: Error L107 (Address Space Overflow) for ?STACK ",
+      "document_number" : "ka003848",
+      "document_version" : "1-0",
+      "content_type" : "knowledgeBaseArticle",
+      "systopparent" : "4523532",
+      "sysurihash" : "VzVxKVBmGpBPOwpf",
+      "urihash" : "VzVxKVBmGpBPOwpf",
+      "sysuri" : "https://developer.arm.com/documentation/ka003848/1-0/en",
+      "systransactionid" : 864277,
+      "is_confidential" : 0,
+      "z95xtemplatename" : "Document",
+      "validityscore" : 1.0,
+      "published" : 1614702924000,
+      "topparentid" : 4523532,
+      "z95xtemplate" : "f322b88bf5e04c4abe6274e9375c2ff6",
+      "created" : 1614703033000,
+      "sysconcepts" : "IDATA segments ; stack ; linker ; absolute ; 0xFE ; BL51 User ; Error L107 ; map file",
+      "navigationhierarchies" : [ "5fbba08ccd74e712c4497211|5fbba090cd74e712c4497214", "5eec70d4e24a5e02d07b26b4|5fbba08ccd74e712c4497211|5fbba090cd74e712c4497214", "5fbba08ccd74e712c4497211|5fbba09c8e527a03a85ed225", "5fbba162cd74e712c449725c|5fbba09c8e527a03a85ed225" ],
+      "concepts" : "IDATA segments ; stack ; linker ; absolute ; 0xFE ; BL51 User ; Error L107 ; map file",
+      "documenttype" : "html",
+      "sysindexeddate" : 1649149712000,
+      "permanentid" : "2d6a93d558df4b72970e60b4135288ed82f5c48b3a4ca457ec5ee22db126",
+      "syslanguage" : [ "English" ],
+      "itemid" : "603e69b9492bde1625aa947a",
+      "transactionid" : 864277,
+      "title" : "BL51: Error L107 (Address Space Overflow) for ?STACK ",
+      "products" : [ "A51", "CA51", "PK51" ],
+      "date" : 1649149712000,
+      "confidentiality" : "Non-Confidential",
+      "document_id" : "ka003848:1-0:en",
+      "is_topic" : 0,
+      "navigationhierarchiesaudience" : [ "SoC Designers", "Hardware Engineers", "Software Developers" ],
+      "audience" : [ "socDesigners", "hardwareEngineers", "softwareDevelopers" ],
+      "product_quality" : "REL",
+      "sourcetype" : "Push",
+      "rowid" : 1649149712800664880,
+      "navigationhierarchiescontenttype" : "Knowledge Base Article",
+      "size" : 3283,
+      "sysdocumenttype" : "html",
+      "clickableuri" : "https://developer.arm.com/documentation/ka003848/1-0/?lang=en",
+      "syssource" : "prd-document-service-index",
+      "orderingid" : 1649149600245,
+      "syssize" : 3283,
+      "sysdate" : 1649149712000,
+      "haslayout" : "1",
+      "topparent" : "4523532",
+      "label_version" : "1.0",
+      "language_code" : "en",
+      "z95xpath" : [ "110d559fdea542ea9c1c8a5df7e70ef9", "ef82176369c34c2388bffd3138cd26f8" ],
+      "systopparentid" : 4523532,
+      "content_description" : "Knowledge Base Article",
+      "wordcount" : 190,
+      "source" : "prd-document-service-index",
+      "navigationhierarchiesnames" : [ "Keil Products|C51 Development Tools", "Tools and Software|Keil Products|C51 Development Tools", "Keil Products|Keil Tools Licensing", "Tools Licensing|Keil Tools Licensing" ],
+      "navigationhierarchiesproducts" : [ "Tools and Software", "Tools and Software|Keil Products", "Tools and Software|Keil Products|C51 Development Tools" ],
+      "document_revision" : "1",
+      "collection" : "default",
+      "syssourcetype" : "Push",
+      "indexeddate" : 1649149712000,
+      "filetype" : "html",
+      "sysclickableuri" : "https://developer.arm.com/documentation/ka003848/1-0/?lang=en",
+      "templateid" : "f322b88bf5e04c4abe6274e9375c2ff6",
+      "sysfiletype" : "html",
+      "path" : "/ka003848/1-0/?lang=en",
+      "modified" : 1614703033000,
+      "latest_version" : "true",
+      "language" : [ "English" ],
+      "sysrowid" : 1649149712800664880,
+      "uri" : "https://developer.arm.com/documentation/ka003848/1-0/en",
+      "syscollection" : "default"
+    },
+    "Title" : "BL51: Error L107 (Address Space Overflow) for ?STACK",
+    "Uri" : "https://developer.arm.com/documentation/ka003848/1-0/en",
+    "PrintableUri" : "https://developer.arm.com/documentation/ka003848/1-0/en",
+    "ClickUri" : "https://developer.arm.com/documentation/ka003848/1-0/?lang=en",
+    "UniqueId" : "42.29000$https://developer.arm.com/documentation/ka003848/1-0/en",
+    "Excerpt" : "STACK segment in the IDATA linker command. For example: BL51 test.obj IDATA(?STACK)\\n This instructs the linker allocate memory ... TYPE BASE LENGTH RELOCATION SEGMENT NAME\\n ... STACK\\n",
+    "FirstSentences" : "Article ID: KA003848 Applies To: C51 Development Tools Confidentiality: Customer Non-confidential Information in this article applies to: C51 Version 5 C51 Version 6 SYMPTOMS I've created a ..."
+  }, {
     "title" : "A166: Bit-Addressable Registers in Assembly Code",
     "uri" : "https://developer.arm.com/documentation/ka002432/1-0/en",
     "printableUri" : "https://developer.arm.com/documentation/ka002432/1-0/en",
@@ -5975,219 +7738,5 @@
     "UniqueId" : "42.29000$https://developer.arm.com/documentation/ka002555/1-0/en",
     "Excerpt" : "Article ID: KA002555 Applies To: C166 Development Tools, C251 Development Tools, C51 Development Tools ... there a way of 'turning these warnings off'? ... GENERAL: Turning off Warnings KBA",
     "FirstSentences" : "Article ID: KA002555 Applies To: C166 Development Tools, C251 Development Tools, C51 Development Tools Confidentiality: Customer Non-confidential Information in this article applies to: C166 ..."
-  }, {
-    "title" : "GCC: Problem with Initialized Variables on ADUC7000",
-    "uri" : "https://developer.arm.com/documentation/ka003645/1-0/en",
-    "printableUri" : "https://developer.arm.com/documentation/ka003645/1-0/en",
-    "clickUri" : "https://developer.arm.com/documentation/ka003645/1-0/?lang=en",
-    "uniqueId" : "42.29000$https://developer.arm.com/documentation/ka003645/1-0/en",
-    "excerpt" : "Article ID: KA003645 Applies To: GNU Toolchain Confidentiality: Customer Non-confidential ... Everything worked fine until I started using variables that are initialized at the file ... Why?",
-    "firstSentences" : "Article ID: KA003645 Applies To: GNU Toolchain Confidentiality: Customer Non-confidential Information in this article applies to: GNU C Compiler for ARM Version 3.22 QUESTION I have started using ...",
-    "summary" : null,
-    "flags" : "HasHtmlVersion;SkipSentencesScoring",
-    "hasHtmlVersion" : true,
-    "hasMobileHtmlVersion" : false,
-    "score" : 0,
-    "percentScore" : 0.0,
-    "rankingInfo" : null,
-    "rating" : 0.0,
-    "isTopResult" : false,
-    "isRecommendation" : false,
-    "isUserActionView" : false,
-    "titleHighlights" : [ ],
-    "firstSentencesHighlights" : [ ],
-    "excerptHighlights" : [ ],
-    "printableUriHighlights" : [ ],
-    "summaryHighlights" : [ ],
-    "parentResult" : null,
-    "childResults" : [ ],
-    "totalNumberOfChildResults" : 1,
-    "absentTerms" : [ ],
-    "raw" : {
-      "systitle" : "GCC: Problem with Initialized Variables on ADUC7000 ",
-      "document_number" : "ka003645",
-      "document_version" : "1-0",
-      "content_type" : "knowledgeBaseArticle",
-      "systopparent" : "4523648",
-      "sysurihash" : "eOJpydyoVl783RK8",
-      "urihash" : "eOJpydyoVl783RK8",
-      "sysuri" : "https://developer.arm.com/documentation/ka003645/1-0/en",
-      "systransactionid" : 863746,
-      "is_confidential" : 0,
-      "z95xtemplatename" : "Document",
-      "validityscore" : 1.0,
-      "published" : 1614704161000,
-      "topparentid" : 4523648,
-      "z95xtemplate" : "f322b88bf5e04c4abe6274e9375c2ff6",
-      "created" : 1614704239000,
-      "sysconcepts" : "programming ; compiler ; startup ; configuration ; Arm Embedded Toolchain ; linker script ; Keil ; Modern ; overlapping",
-      "navigationhierarchies" : [ "5eec70d4e24a5e02d07b26b4|5eec70d5e24a5e02d07b26b8|5eec715ee24a5e02d07b26c6", "5fbba124cd74e712c4497249|5eec715ee24a5e02d07b26c6", "5fbba124cd74e712c4497249|5fbba1258e527a03a85ed254", "5fbba162cd74e712c449725c|5fbba1258e527a03a85ed254" ],
-      "concepts" : "programming ; compiler ; startup ; configuration ; Arm Embedded Toolchain ; linker script ; Keil ; Modern ; overlapping",
-      "documenttype" : "html",
-      "sysindexeddate" : 1649083993000,
-      "permanentid" : "11ebf23e11800f0d3cabc698edade3794afa1cf923513097bdd19fec786e",
-      "syslanguage" : [ "English" ],
-      "itemid" : "603e6e6f492bde1625aa9571",
-      "transactionid" : 863746,
-      "title" : "GCC: Problem with Initialized Variables on ADUC7000 ",
-      "products" : [ "FM000-KT-00008" ],
-      "date" : 1649083993000,
-      "confidentiality" : "Non-Confidential",
-      "document_id" : "ka003645:1-0:en",
-      "is_topic" : 0,
-      "navigationhierarchiesaudience" : [ "SoC Designers", "Hardware Engineers", "Software Developers" ],
-      "audience" : [ "socDesigners", "hardwareEngineers", "softwareDevelopers" ],
-      "product_quality" : "REL",
-      "sourcetype" : "Push",
-      "rowid" : 1649083993541654750,
-      "navigationhierarchiescontenttype" : "Knowledge Base Article",
-      "size" : 1640,
-      "sysdocumenttype" : "html",
-      "clickableuri" : "https://developer.arm.com/documentation/ka003645/1-0/?lang=en",
-      "syssource" : "prd-document-service-index",
-      "orderingid" : 1649083649534,
-      "syssize" : 1640,
-      "sysdate" : 1649083993000,
-      "haslayout" : "1",
-      "topparent" : "4523648",
-      "label_version" : "1.0",
-      "language_code" : "en",
-      "z95xpath" : [ "110d559fdea542ea9c1c8a5df7e70ef9", "ef82176369c34c2388bffd3138cd26f8" ],
-      "systopparentid" : 4523648,
-      "content_description" : "Knowledge Base Article",
-      "wordcount" : 149,
-      "source" : "prd-document-service-index",
-      "navigationhierarchiesnames" : [ "Tools and Software|Open Source Software|GNU Toolchain", "Compilers|GNU Toolchain", "Compilers|Embedded Compilers", "Tools Licensing|Embedded Compilers" ],
-      "navigationhierarchiesproducts" : [ "Tools and Software", "Tools and Software|Open Source Software", "Tools and Software|Open Source Software|GNU Toolchain" ],
-      "document_revision" : "1",
-      "collection" : "default",
-      "syssourcetype" : "Push",
-      "indexeddate" : 1649083993000,
-      "filetype" : "html",
-      "sysclickableuri" : "https://developer.arm.com/documentation/ka003645/1-0/?lang=en",
-      "templateid" : "f322b88bf5e04c4abe6274e9375c2ff6",
-      "sysfiletype" : "html",
-      "path" : "/ka003645/1-0/?lang=en",
-      "modified" : 1614704239000,
-      "latest_version" : "true",
-      "language" : [ "English" ],
-      "sysrowid" : 1649083993541654750,
-      "uri" : "https://developer.arm.com/documentation/ka003645/1-0/en",
-      "syscollection" : "default"
-    },
-    "Title" : "GCC: Problem with Initialized Variables on ADUC7000",
-    "Uri" : "https://developer.arm.com/documentation/ka003645/1-0/en",
-    "PrintableUri" : "https://developer.arm.com/documentation/ka003645/1-0/en",
-    "ClickUri" : "https://developer.arm.com/documentation/ka003645/1-0/?lang=en",
-    "UniqueId" : "42.29000$https://developer.arm.com/documentation/ka003645/1-0/en",
-    "Excerpt" : "Article ID: KA003645 Applies To: GNU Toolchain Confidentiality: Customer Non-confidential ... Everything worked fine until I started using variables that are initialized at the file ... Why?",
-    "FirstSentences" : "Article ID: KA003645 Applies To: GNU Toolchain Confidentiality: Customer Non-confidential Information in this article applies to: GNU C Compiler for ARM Version 3.22 QUESTION I have started using ..."
-  }, {
-    "title" : "C166: Where Is the User Stack Located?",
-    "uri" : "https://developer.arm.com/documentation/ka003901/1-0/en",
-    "printableUri" : "https://developer.arm.com/documentation/ka003901/1-0/en",
-    "clickUri" : "https://developer.arm.com/documentation/ka003901/1-0/?lang=en",
-    "uniqueId" : "42.29000$https://developer.arm.com/documentation/ka003901/1-0/en",
-    "excerpt" : "Article ID: KA003901 Applies To: C166 Development Tools Confidentiality: Customer Non- ... ANSWER The user stack is located in the NDATA memory class. ... C_USERSTACK\\n$ENDIF\\n?C_USRSTKBOT:\\n",
-    "firstSentences" : "Article ID: KA003901 Applies To: C166 Development Tools Confidentiality: Customer Non-confidential Information in this article applies to: C166 Version 3.12 and later QUESTION In which memory ...",
-    "summary" : null,
-    "flags" : "HasHtmlVersion;SkipSentencesScoring",
-    "hasHtmlVersion" : true,
-    "hasMobileHtmlVersion" : false,
-    "score" : 0,
-    "percentScore" : 0.0,
-    "rankingInfo" : null,
-    "rating" : 0.0,
-    "isTopResult" : false,
-    "isRecommendation" : false,
-    "isUserActionView" : false,
-    "titleHighlights" : [ ],
-    "firstSentencesHighlights" : [ ],
-    "excerptHighlights" : [ ],
-    "printableUriHighlights" : [ ],
-    "summaryHighlights" : [ ],
-    "parentResult" : null,
-    "childResults" : [ ],
-    "totalNumberOfChildResults" : 1,
-    "absentTerms" : [ ],
-    "raw" : {
-      "systitle" : "C166: Where Is the User Stack Located? ",
-      "document_number" : "ka003901",
-      "document_version" : "1-0",
-      "content_type" : "knowledgeBaseArticle",
-      "systopparent" : "4524025",
-      "sysurihash" : "Ctz2cGAN4imvMEQr",
-      "urihash" : "Ctz2cGAN4imvMEQr",
-      "sysuri" : "https://developer.arm.com/documentation/ka003901/1-0/en",
-      "systransactionid" : 863746,
-      "is_confidential" : 0,
-      "z95xtemplatename" : "Document",
-      "validityscore" : 1.0,
-      "published" : 1614711376000,
-      "topparentid" : 4524025,
-      "z95xtemplate" : "f322b88bf5e04c4abe6274e9375c2ff6",
-      "created" : 1614711467000,
-      "sysconcepts" : "user stack ; startup ; A66 ; NDATA ; USTSZ ; nNDATA DGROUP ; memory class ; amount of space",
-      "navigationhierarchies" : [ "5fbba08ccd74e712c4497211|5fbba08d8e527a03a85ed21c", "5eec70d4e24a5e02d07b26b4|5fbba08ccd74e712c4497211|5fbba08d8e527a03a85ed21c", "5fbba08ccd74e712c4497211|5fbba09c8e527a03a85ed225", "5fbba162cd74e712c449725c|5fbba09c8e527a03a85ed225" ],
-      "concepts" : "user stack ; startup ; A66 ; NDATA ; USTSZ ; nNDATA DGROUP ; memory class ; amount of space",
-      "documenttype" : "html",
-      "sysindexeddate" : 1649083993000,
-      "permanentid" : "0f7072b4dd271f53935b75d9be4b3009ccfcb084063a283b7b98f37379d6",
-      "syslanguage" : [ "English" ],
-      "itemid" : "603e8aab492bde1625aa98b4",
-      "transactionid" : 863746,
-      "title" : "C166: Where Is the User Stack Located? ",
-      "products" : [ "A166", "CA166", "PK166" ],
-      "date" : 1649083992000,
-      "confidentiality" : "Non-Confidential",
-      "document_id" : "ka003901:1-0:en",
-      "is_topic" : 0,
-      "navigationhierarchiesaudience" : [ "SoC Designers", "Hardware Engineers", "Software Developers" ],
-      "audience" : [ "socDesigners", "hardwareEngineers", "softwareDevelopers" ],
-      "product_quality" : "REL",
-      "sourcetype" : "Push",
-      "rowid" : 1649083992923520905,
-      "navigationhierarchiescontenttype" : "Knowledge Base Article",
-      "size" : 880,
-      "sysdocumenttype" : "html",
-      "clickableuri" : "https://developer.arm.com/documentation/ka003901/1-0/?lang=en",
-      "syssource" : "prd-document-service-index",
-      "orderingid" : 1649083659656,
-      "syssize" : 880,
-      "sysdate" : 1649083992000,
-      "haslayout" : "1",
-      "topparent" : "4524025",
-      "label_version" : "1.0",
-      "language_code" : "en",
-      "z95xpath" : [ "110d559fdea542ea9c1c8a5df7e70ef9", "ef82176369c34c2388bffd3138cd26f8" ],
-      "systopparentid" : 4524025,
-      "content_description" : "Knowledge Base Article",
-      "wordcount" : 80,
-      "source" : "prd-document-service-index",
-      "navigationhierarchiesnames" : [ "Keil Products|C166 Development Tools", "Tools and Software|Keil Products|C166 Development Tools", "Keil Products|Keil Tools Licensing", "Tools Licensing|Keil Tools Licensing" ],
-      "navigationhierarchiesproducts" : [ "Tools and Software", "Tools and Software|Keil Products", "Tools and Software|Keil Products|C166 Development Tools" ],
-      "document_revision" : "1",
-      "collection" : "default",
-      "syssourcetype" : "Push",
-      "indexeddate" : 1649083993000,
-      "filetype" : "html",
-      "sysclickableuri" : "https://developer.arm.com/documentation/ka003901/1-0/?lang=en",
-      "templateid" : "f322b88bf5e04c4abe6274e9375c2ff6",
-      "sysfiletype" : "html",
-      "path" : "/ka003901/1-0/?lang=en",
-      "modified" : 1614711467000,
-      "latest_version" : "true",
-      "language" : [ "English" ],
-      "sysrowid" : 1649083992923520905,
-      "uri" : "https://developer.arm.com/documentation/ka003901/1-0/en",
-      "syscollection" : "default"
-    },
-    "Title" : "C166: Where Is the User Stack Located?",
-    "Uri" : "https://developer.arm.com/documentation/ka003901/1-0/en",
-    "PrintableUri" : "https://developer.arm.com/documentation/ka003901/1-0/en",
-    "ClickUri" : "https://developer.arm.com/documentation/ka003901/1-0/?lang=en",
-    "UniqueId" : "42.29000$https://developer.arm.com/documentation/ka003901/1-0/en",
-    "Excerpt" : "Article ID: KA003901 Applies To: C166 Development Tools Confidentiality: Customer Non- ... ANSWER The user stack is located in the NDATA memory class. ... C_USERSTACK\\n$ENDIF\\n?C_USRSTKBOT:\\n",
-    "FirstSentences" : "Article ID: KA003901 Applies To: C166 Development Tools Confidentiality: Customer Non-confidential Information in this article applies to: C166 Version 3.12 and later QUESTION In which memory ..."
   } ]
 }
