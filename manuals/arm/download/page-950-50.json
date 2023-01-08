@@ -1,15 +1,1355 @@
 {
-  "totalCount" : 5620,
-  "totalCountFiltered" : 5620,
-  "duration" : 555,
-  "indexDuration" : 248,
-  "requestDuration" : 464,
-  "searchUid" : "f58f974e-a524-4dd5-90fd-9c0264d24ac9",
+  "totalCount" : 5626,
+  "totalCountFiltered" : 5626,
+  "duration" : 574,
+  "indexDuration" : 241,
+  "requestDuration" : 462,
+  "searchUid" : "0ae68188-af50-4425-a075-e665a6932001",
   "pipeline" : "Docs_Hub",
   "apiVersion" : 2,
-  "index" : "armlimitedproductionubhpo2y4-w180tn4p-Indexer-3-wir2qzbauplepxfpn3hftwcita",
+  "basicExpression" : null,
+  "advancedExpression" : "@latest_version==true",
+  "largeExpression" : null,
+  "constantExpression" : "@source==prd-document-service-index",
+  "disjunctionExpression" : "@latest_version==true (@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e OR @permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b OR @permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd OR @permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9 OR @permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a)",
+  "mandatoryExpression" : null,
+  "userIdentities" : [ {
+    "name" : "anonymous@coveo.com",
+    "provider" : "Email Security Provider",
+    "type" : "User"
+  } ],
+  "rankingExpressions" : [ {
+    "expression" : "@content_type==technicalReferenceManual",
+    "modifier" : 100,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@content_type==archDoc",
+    "modifier" : 100,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@content_type==guide",
+    "modifier" : 100,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@published>=today-90d",
+    "modifier" : 50,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@published>=today-360d",
+    "modifier" : 25,
+    "isConstant" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+    "modifier" : 16,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+    "modifier" : 14,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiesproducts==architectures",
+    "modifier" : 10,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==guide",
+    "modifier" : 8,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+    "modifier" : 8,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+    "modifier" : 250,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+    "modifier" : 173,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd",
+    "modifier" : 166,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+    "modifier" : 163,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+    "modifier" : 128,
+    "isConstant" : false,
+    "applyToEveryResult" : true
+  } ],
+  "rankingExpressionGroups" : [ ],
+  "topResults" : [ {
+    "expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 250,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 173,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 166,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 163,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  }, {
+    "expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+    "isConstant" : false,
+    "matchQuery" : false,
+    "matchAdvancedQuery" : true,
+    "modifier" : 128,
+    "exclusive" : false,
+    "includeInFacets" : true,
+    "applyToEveryResult" : true
+  } ],
+  "executionReport" : {
+    "duration" : 578,
+    "children" : [ {
+      "name" : "RequestId",
+      "description" : "The id correlating logs for this request",
+      "duration" : 0,
+      "X-Request-ID" : "860188de-c5bf-41b1-8a8f-68ef8016984f"
+    }, {
+      "name" : "Organization ID",
+      "description" : "Organization ID",
+      "duration" : 0,
+      "coveo_organization" : "armlimitedproductionubhpo2y4"
+    }, {
+      "name" : "PerformAuthentication",
+      "description" : "Perform authentication",
+      "duration" : 0,
+      "configured" : {
+        "primary" : "CloudToken"
+      },
+      "result" : {
+        "userIds" : [ {
+          "name" : "anonymous@coveo.com",
+          "kind" : "User",
+          "provider" : "Email Security Provider",
+          "infos" : { }
+        } ],
+        "roles" : [ "queryExecutor" ],
+        "queryRestrictions" : {
+          "pipeline" : null,
+          "filter" : null
+        },
+        "userGroups" : [ ]
+      },
+      "children" : [ {
+        "name" : "ResolveProviderAuthentication",
+        "description" : "Resolve authentication of provider: CloudToken",
+        "duration" : 0,
+        "result" : {
+          "userIds" : [ {
+            "name" : "anonymous@coveo.com",
+            "kind" : "User",
+            "provider" : "Email Security Provider",
+            "infos" : { }
+          } ],
+          "roles" : [ "queryExecutor" ],
+          "queryRestrictions" : {
+            "pipeline" : null,
+            "filter" : null
+          },
+          "userGroups" : [ ]
+        }
+      } ]
+    }, {
+      "name" : "PerformAuthentication",
+      "description" : "Perform authentication",
+      "duration" : 0,
+      "configured" : {
+        "secondary" : [ "sso" ],
+        "mandatory" : [ ]
+      },
+      "result" : {
+        "userIds" : [ {
+          "name" : "anonymous@coveo.com",
+          "kind" : "User",
+          "provider" : "Email Security Provider",
+          "infos" : { }
+        } ],
+        "roles" : [ "queryExecutor" ],
+        "queryRestrictions" : {
+          "pipeline" : null,
+          "filter" : null
+        },
+        "userGroups" : [ ]
+      },
+      "children" : [ {
+        "name" : "MergeAuthentications",
+        "description" : "Merge authentications (if needed)",
+        "duration" : 0,
+        "result" : {
+          "userIds" : [ {
+            "name" : "anonymous@coveo.com",
+            "kind" : "User",
+            "provider" : "Email Security Provider",
+            "infos" : { }
+          } ],
+          "roles" : [ "queryExecutor" ],
+          "queryRestrictions" : {
+            "pipeline" : null,
+            "filter" : null
+          },
+          "userGroups" : [ ]
+        }
+      } ]
+    }, {
+      "name" : "ResolveContext",
+      "description" : "Resolve context",
+      "duration" : 1,
+      "result" : {
+        "userAgent" : {
+          "raw" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0",
+          "browser" : [ "firefox" ],
+          "device" : [ "desktop", "pc", "mac", "osx" ],
+          "os" : [ "osx", "mac" ]
+        },
+        "searchHub" : "Docs_hub",
+        "tab" : null,
+        "referrer" : "",
+        "locale" : "en",
+        "context" : { },
+        "expressions" : {
+          "q" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "aq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "cq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "dq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "lq" : {
+            "original" : "",
+            "parsed" : null
+          }
+        },
+        "enableDuplicateFiltering" : false,
+        "filterField" : "@document_id",
+        "filterFieldRange" : 3,
+        "parentField" : "@itemid",
+        "childField" : "@parentitem",
+        "recommendation" : null,
+        "lowercaseOperators" : false,
+        "sortCriteria" : [ "relevancy" ]
+      }
+    }, {
+      "name" : "ResolvePipeline",
+      "description" : "Resolve pipeline",
+      "duration" : 1,
+      "result" : {
+        "pipeline" : "Docs_Hub",
+        "pipelineId" : "579c6cdd-a8d6-4825-aab1-6d1c1100cb69",
+        "pipelineHash" : "725a8015240d0f34cab87951e3ee6186",
+        "splitTest" : null,
+        "statementGroups" : [ ]
+      }
+    }, {
+      "name" : "ResolveContext",
+      "description" : "Resolve context",
+      "duration" : 0,
+      "result" : {
+        "userAgent" : {
+          "raw" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0",
+          "browser" : [ "firefox" ],
+          "device" : [ "desktop", "pc", "mac", "osx" ],
+          "os" : [ "osx", "mac" ]
+        },
+        "searchHub" : "Docs_hub",
+        "tab" : null,
+        "referrer" : "",
+        "locale" : "en",
+        "context" : { },
+        "expressions" : {
+          "q" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "aq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "cq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "dq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "lq" : {
+            "original" : "",
+            "parsed" : null
+          }
+        },
+        "enableDuplicateFiltering" : false,
+        "filterField" : "@document_id",
+        "filterFieldRange" : 3,
+        "parentField" : "@itemid",
+        "childField" : "@parentitem",
+        "recommendation" : null,
+        "lowercaseOperators" : false,
+        "sortCriteria" : [ "relevancy" ]
+      }
+    }, {
+      "name" : "ApplyQueryParamOverrideFeature",
+      "description" : "Apply 'queryParamOverride' rules",
+      "duration" : 0,
+      "applied" : [ ]
+    }, {
+      "name" : "ResolveContext",
+      "description" : "Resolve context",
+      "duration" : 0,
+      "result" : {
+        "userAgent" : {
+          "raw" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0",
+          "browser" : [ "firefox" ],
+          "device" : [ "desktop", "pc", "mac", "osx" ],
+          "os" : [ "osx", "mac" ]
+        },
+        "searchHub" : "Docs_hub",
+        "tab" : null,
+        "referrer" : "",
+        "locale" : "en",
+        "context" : { },
+        "expressions" : {
+          "q" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "aq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "cq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "dq" : {
+            "original" : "",
+            "parsed" : null
+          },
+          "lq" : {
+            "original" : "",
+            "parsed" : null
+          }
+        },
+        "enableDuplicateFiltering" : false,
+        "filterField" : "@document_id",
+        "filterFieldRange" : 3,
+        "parentField" : "@itemid",
+        "childField" : "@parentitem",
+        "recommendation" : null,
+        "lowercaseOperators" : false,
+        "sortCriteria" : [ "relevancy" ]
+      }
+    }, {
+      "name" : "PreprocessQuery",
+      "description" : "Preprocess query",
+      "duration" : 25,
+      "result" : {
+        "in" : {
+          "q" : null,
+          "aq" : "@latest_version==true",
+          "lq" : null,
+          "cq" : "@source==prd-document-service-index",
+          "dq" : null,
+          "mq" : null,
+          "parentField" : "@itemid",
+          "childField" : "@parentitem",
+          "filterField" : "@document_id",
+          "filterFieldRange" : 3,
+          "enableDuplicateFiltering" : false,
+          "numberOfResults" : 50,
+          "queryFunctions" : [ ],
+          "rankingFunctions" : [ ],
+          "sortCriteria" : [ "relevancy" ],
+          "rankingExpressions" : [ {
+            "expression" : "@content_type==technicalReferenceManual",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==archDoc",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==guide",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-90d",
+            "modifier" : 50,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-360d",
+            "modifier" : 25,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+            "modifier" : 16,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+            "modifier" : 14,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiesproducts==architectures",
+            "modifier" : 10,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==guide",
+            "modifier" : 8,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+            "modifier" : 8,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          } ],
+          "rankingOverrides" : [ ]
+        },
+        "out" : {
+          "q" : null,
+          "aq" : "@latest_version==true",
+          "lq" : null,
+          "cq" : "@source==prd-document-service-index",
+          "dq" : null,
+          "mq" : null,
+          "parentField" : "@itemid",
+          "childField" : "@parentitem",
+          "filterField" : "@document_id",
+          "filterFieldRange" : 3,
+          "enableDuplicateFiltering" : false,
+          "numberOfResults" : 50,
+          "queryFunctions" : [ ],
+          "rankingFunctions" : [ ],
+          "sortCriteria" : [ "relevancy" ],
+          "rankingExpressions" : [ {
+            "expression" : "@content_type==technicalReferenceManual",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==archDoc",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@content_type==guide",
+            "modifier" : 100,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-90d",
+            "modifier" : 50,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@published>=today-360d",
+            "modifier" : 25,
+            "isConstant" : true,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+            "modifier" : 16,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+            "modifier" : 14,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiesproducts==architectures",
+            "modifier" : 10,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==guide",
+            "modifier" : 8,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          }, {
+            "expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+            "modifier" : 8,
+            "isConstant" : false,
+            "applyToEveryResult" : true
+          } ],
+          "rankingOverrides" : [ ]
+        }
+      },
+      "children" : [ {
+        "name" : "ApplyFilterFeature",
+        "description" : "Apply 'filter' rules",
+        "duration" : 0,
+        "applied" : [ {
+          "type" : "cq",
+          "expressions" : [ "@source==\"prd-document-service-index\"" ]
+        }, {
+          "type" : "aq",
+          "expressions" : [ "@latest_version==\"true\"" ]
+        } ]
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 1,
+        "result" : {
+          "type" : "aq",
+          "in" : "@latest_version==\"true\"",
+          "out" : "@latest_version==\"true\""
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 1,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "cq",
+          "in" : "@source==\"prd-document-service-index\"",
+          "out" : "@source==\"prd-document-service-index\""
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "ApplyRankingFeature",
+        "description" : "Apply 'ranking' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@content_type==technicalReferenceManual",
+          "out" : "@content_type==technicalReferenceManual"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@content_type==archDoc",
+          "out" : "@content_type==archDoc"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@content_type==guide",
+          "out" : "@content_type==guide"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@published>=today-90d",
+          "out" : "@published>=today-90d"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "PreprocessQueryExpression",
+        "description" : "Preprocess query expression",
+        "duration" : 0,
+        "result" : {
+          "type" : "other",
+          "in" : "@published>=today-360d",
+          "out" : "@published>=today-360d"
+        },
+        "children" : [ {
+          "name" : "ApplyThesaurusFeature",
+          "description" : "Apply 'thesaurus' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        }, {
+          "name" : "ApplyStopWordFeature",
+          "description" : "Apply 'stop' rules",
+          "duration" : 0,
+          "applied" : [ ]
+        } ]
+      }, {
+        "name" : "QueryExtension",
+        "description" : "Find and execute query extensions",
+        "duration" : 0
+      }, {
+        "name" : "ApplyTopResultFeature",
+        "description" : "Apply 'top' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      }, {
+        "name" : "ApplyRankingWeightFeature",
+        "description" : "Apply 'rankingweight' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      }, {
+        "name" : "CallingRevealTopClicks",
+        "description" : "Calling 'topClicks' reveal service",
+        "duration" : 14,
+        "config" : {
+          "model" : "armlimitedproductionubhpo2y4_topclicks_0e95c60e_7d3a_415d_984f_679c6b26da9c",
+          "engineVersion" : "~2|~3",
+          "modifier" : 250,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "useRefinedQuery" : false,
+          "maxResults" : 5,
+          "cacheMaximumAge" : "PT10S"
+        },
+        "basicQueryKeywords" : [ ],
+        "largeQueryKeywords" : [ ],
+        "userId" : "anonymous@coveo.com",
+        "actionHistories" : [ ],
+        "userContext" : { },
+        "response" : {
+          "source" : "reveal",
+          "predictions" : [ {
+            "document" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+            "score" : 1.0
+          }, {
+            "document" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+            "score" : 0.6935857551865068
+          }, {
+            "document" : "@permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd",
+            "score" : 0.6661247290895285
+          }, {
+            "document" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+            "score" : 0.6546051303273817
+          }, {
+            "document" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+            "score" : 0.5136521172978787
+          } ],
+          "refinedQueries" : [ ],
+          "debug" : {"requestId":null,"responseId":"867e1da8-3dd8-43cd-b0d5-efca6257662f","modelInfo":"{\"modelId\":\"armlimitedproductionubhpo2y4_topclicks_0e95c60e_7d3a_415d_984f_679c6b26da9c\",\"modelName\":\"0e95c60e_7d3a_415d_984f_679c6b26da9c\",\"version\":\"3.47.0\",\"environment\":\"prd\",\"org\":\"armlimitedproductionubhpo2y4\",\"modelVersion\":\"3.47.1673137289\",\"createdDate\":\"2023-01-08T01:11:09.836Z\",\"modelSize\":\"22979\"}","queryParams":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"wordSelection\":\"\",\"lq\":\"\",\"lqWeight\":0.75,\"selectedFacets\":[]}","updatedQueryParameters":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"wordSelection\":\"\",\"lq\":\"\",\"lqWeight\":0.75,\"selectedFacets\":[]}","executionLog":["Context keys not found: originLevel3","Matched user context(s) in model: ."]}
+        }
+      }, {
+        "name" : "EvaluatingTopClicks",
+        "description" : "Evaluate 'topClicks' reveal response",
+        "duration" : 0,
+        "topResults" : [ {
+          "expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 250,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 173,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 166,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 163,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        }, {
+          "expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+          "isConstant" : false,
+          "matchQuery" : false,
+          "matchAdvancedQuery" : true,
+          "modifier" : 128,
+          "exclusive" : false,
+          "includeInFacets" : true,
+          "applyToEveryResult" : true
+        } ],
+        "refinedQueries" : [ ]
+      }, {
+        "name" : "FacetSense",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0
+      }, {
+        "name" : "FacetSense",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0
+      }, {
+        "name" : "CallingRevealFacetSense",
+        "description" : "Calling 'facetSense' reveal service",
+        "duration" : 10,
+        "config" : {
+          "customQueryParameters" : {
+            "automaticSelection" : {
+              "isEnabled" : true
+            },
+            "rankingBoost" : {
+              "isEnabled" : true
+            },
+            "facetAutoSelect" : { },
+            "facetOrdering" : {
+              "isEnabled" : true
+            },
+            "facetValueOrdering" : {
+              "isEnabled" : true
+            }
+          },
+          "cacheMaximumAge" : "PT10S"
+        },
+        "basicQueryKeywords" : [ ],
+        "userId" : "anonymous@coveo.com",
+        "selectedFacets" : [ ],
+        "excludedFacets" : [ ],
+        "actionHistories" : [ ],
+        "userContext" : { },
+        "response" : {
+          "facetSenseResults" : {
+            "facetOrdering" : [ {
+              "field" : "navigationhierarchiescontenttype",
+              "score" : 2.3891636615413065
+            }, {
+              "field" : "navigationhierarchiesproducts",
+              "score" : 2.0870057508393356
+            }, {
+              "field" : "navigationhierarchiesaudience",
+              "score" : 0.36431538125617074
+            }, {
+              "field" : "navigationhierarchiestopics",
+              "score" : 0.1249944853087037
+            } ],
+            "valuesOrdering" : [ {
+              "field" : "navigationhierarchiescontenttype",
+              "values" : [ {
+                "value" : "technical reference manual",
+                "score" : 1.0
+              }, {
+                "value" : "architecture document",
+                "score" : 0.876238322332735
+              }, {
+                "value" : "guide",
+                "score" : 0.5382923529960656
+              }, {
+                "value" : "user guide",
+                "score" : 0.5344011159462755
+              }, {
+                "value" : "reference guide",
+                "score" : 0.3624083809953808
+              }, {
+                "value" : "knowledge base article",
+                "score" : 0.2907267970470132
+              }, {
+                "value" : "datasheet",
+                "score" : 0.275718464425683
+              }, {
+                "value" : "application note",
+                "score" : 0.272239893274472
+              } ]
+            }, {
+              "field" : "navigationhierarchiesproducts",
+              "values" : [ {
+                "value" : "architectures",
+                "score" : 0.6021680186780881
+              }, {
+                "value" : "architectures;cpu architecture",
+                "score" : 0.4279606027159998
+              }, {
+                "value" : "architectures;cpu architecture;a-profile;armv8-a",
+                "score" : 0.41376693116098473
+              }, {
+                "value" : "architectures;learn the architecture",
+                "score" : 0.3595619802208277
+              }, {
+                "value" : " ip products;processors;cortex-a",
+                "score" : 0.3252917454147642
+              }, {
+                "value" : " architectures",
+                "score" : 0.32118238022175905
+              }, {
+                "value" : " ip products;processors;cortex-m",
+                "score" : 0.31167158352761715
+              }, {
+                "value" : "ip products",
+                "score" : 0.30566383394255003
+              } ]
+            }, {
+              "field" : "navigationhierarchiesaudience",
+              "values" : [ {
+                "value" : "software developers",
+                "score" : 0.3528826217177035
+              }, {
+                "value" : "soc designers",
+                "score" : 0.29591044165073566
+              }, {
+                "value" : "embedded software developers",
+                "score" : 0.2845285139262856
+              }, {
+                "value" : "hardware engineers",
+                "score" : 0.28285888431799217
+              } ]
+            }, {
+              "field" : "navigationhierarchiestopics",
+              "values" : [ {
+                "value" : "armv8",
+                "score" : 0.25296250179634694
+              } ]
+            } ],
+            "rankingBoost" : [ {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "technical reference manual",
+              "weight" : 0.3333333333333333
+            }, {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "architecture document",
+              "weight" : 0.29207944077757836
+            }, {
+              "field" : "navigationhierarchiesproducts",
+              "value" : "architectures",
+              "weight" : 0.20072267289269605
+            }, {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "guide",
+              "weight" : 0.17943078433202186
+            }, {
+              "field" : "navigationhierarchiescontenttype",
+              "value" : "user guide",
+              "weight" : 0.17813370531542516
+            } ],
+            "automaticSelection" : [ ],
+            "suggestions" : [ ]
+          },
+          "debug" : {"requestId":null,"responseId":"3bee31eb-c5d5-4b08-9a23-e38a4bade7cd","modelInfo":"{\"modelId\":\"armlimitedproductionubhpo2y4_facetsense_a9c615fb_1f7d_4000_a8c3_89c5c059c9d1\",\"modelName\":\"a9c615fb_1f7d_4000_a8c3_89c5c059c9d1\",\"version\":\"1.31.0\",\"environment\":\"prd\",\"org\":\"armlimitedproductionubhpo2y4\",\"modelVersion\":\"1.31.1673106339\",\"createdDate\":\"2023-01-07T16:17:57.725Z\",\"modelSize\":\"9163\"}","queryParams":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{\"automaticSelection\":{\"isEnabled\":true},\"rankingBoost\":{\"isEnabled\":true},\"facetAutoSelect\":{},\"facetOrdering\":{\"isEnabled\":true},\"facetValueOrdering\":{\"isEnabled\":true}},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"selectedFacets\":[]}","updatedQueryParameters":"{\"num\":5,\"debug\":true,\"traceLevel\":1,\"customParameters\":{\"automaticSelection\":{\"isEnabled\":true},\"rankingBoost\":{\"isEnabled\":true},\"facetAutoSelect\":{},\"facetOrdering\":{\"isEnabled\":true},\"facetValueOrdering\":{\"isEnabled\":true}},\"userContext\":{\"originLevel3\":\"\"},\"actionsHistory\":[],\"userId\":\"anonymous@coveo.com\",\"visitorId\":\"\",\"anonymous\":false,\"lang\":\"en\",\"analyticsContext\":{\"documentReferrer\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:86.0) Gecko/20100101 Firefox/86.0\",\"userId\":\"anonymous@coveo.com\",\"userIp\":\"8.219.157.170\"},\"q\":\"\",\"filters\":{\"originLevel1\":\"Docs_hub\"},\"selectedFacets\":[]}","executionLog":["Matched user context(s) in model: .","Facet values with score below 0.21105520032432032 will be filtered out.","Missing facet type for field navigationhierarchiesaudience and facet value soc designers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiesaudience and facet value hardware engineers is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value technical reference manual is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value user guide is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value technical overview is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value developer guide is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value specification is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Missing facet type for field navigationhierarchiescontenttype and facet value white paper is invalid. Supported facet type are: specific, hierarchical. Fallback on specific facet type.","Facets with score below 0.1 will be filtered out.","Retrieving facet value suggestions from automatic suggestion candidates.","No facet value candidates available for field(s): "]}
+        }
+      }, {
+        "name" : "FacetSense",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0
+      }, {
+        "name" : "ApplyFacetSenseRankingExpressionsFeature",
+        "description" : "Apply 'facetSense' rules",
+        "duration" : 0,
+        "applied" : [ {
+          "expressions" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+          "modifier" : "16"
+        }, {
+          "expressions" : "@navigationhierarchiescontenttype==\"architecture document\"",
+          "modifier" : "14"
+        }, {
+          "expressions" : "@navigationhierarchiesproducts==architectures",
+          "modifier" : "10"
+        }, {
+          "expressions" : "@navigationhierarchiescontenttype==guide",
+          "modifier" : "8"
+        }, {
+          "expressions" : "@navigationhierarchiescontenttype==\"user guide\"",
+          "modifier" : "8"
+        } ]
+      } ]
+    }, {
+      "name" : "BuildFacetSelectedValueOverride",
+      "description" : "Build query overrides based on selected facet selected values",
+      "duration" : 0,
+      "selectedFacets" : [ ],
+      "createdOverrides" : [ ]
+    }, {
+      "name" : "AddExistingQueryParametersToGroupByOverride",
+      "description" : "Add query overrides in the query to each Group By results",
+      "duration" : 0,
+      "queryExpressions" : {
+        "aq" : "@latest_version==true",
+        "cq" : "@source==prd-document-service-index"
+      },
+      "overridesFromExpressions" : [ ]
+    }, {
+      "name" : "PipelineResolveTriggers",
+      "description" : "Resolve triggers",
+      "duration" : 0,
+      "children" : [ {
+        "name" : "ApplyTriggerFeature",
+        "description" : "Apply 'trigger' rules",
+        "duration" : 0,
+        "applied" : [ ]
+      } ]
+    }, {
+      "name" : "IndexOperationV8",
+      "description" : "Send query to index",
+      "duration" : 548,
+      "result" : {
+        "in" : {
+          "BasicExpression" : "@uri",
+          "AdvancedExpression" : "@latest_version==true",
+          "ConstantExpression" : "@source==prd-document-service-index",
+          "DisjunctionExpression" : "@latest_version==true (@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e OR @permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b OR @permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd OR @permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9 OR @permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a)",
+          "FirstResult" : 950,
+          "NumberOfResults" : 50,
+          "SortBy" : "Relevancy",
+          "SortByFields" : [ ],
+          "CustomFilter" : "@document_id",
+          "CustomFilterRange" : 3,
+          "ExcerptLength" : 200,
+          "SummaryLength" : 0,
+          "TimeZoneOffset" : null,
+          "EnableWildcards" : false,
+          "EnableQuestionMark" : false,
+          "EnableDidYouMean" : true,
+          "DisableLogging" : false,
+          "ParentFieldName" : "@itemid",
+          "ChildFieldName" : "@parentitem",
+          "EnableDuplicateFiltering" : false,
+          "ExtractFirstSentences" : true,
+          "EnableRankingInformation" : false,
+          "EnableQueryProfiling" : false,
+          "TimeZone" : "Asia/Shanghai",
+          "TimeOut" : 10,
+          "LanguageExpansion" : null,
+          "SpecifiedLanguages" : null,
+          "PreferredLanguage" : null,
+          "EnableMetatermSyntax" : false,
+          "BackgroundQuery" : false,
+          "RankingExpressions" : [ {
+            "Expression" : "@content_type==technicalReferenceManual",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 100
+          }, {
+            "Expression" : "@content_type==archDoc",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 100
+          }, {
+            "Expression" : "@content_type==guide",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 100
+          }, {
+            "Expression" : "@published>=today-90d",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 50
+          }, {
+            "Expression" : "@published>=today-360d",
+            "IsConstant" : true,
+            "IsDeterministic" : true,
+            "Modifier" : 25
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==\"technical reference manual\"",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 16
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==\"architecture document\"",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 14
+          }, {
+            "Expression" : "@navigationhierarchiesproducts==architectures",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 10
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==guide",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 8
+          }, {
+            "Expression" : "@navigationhierarchiescontenttype==\"user guide\"",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 8
+          }, {
+            "Expression" : "@permanentid=e74561fccf43ba44cce6c10681198f8b31f10bc7fc29f4fd199fdf08330e",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 250
+          }, {
+            "Expression" : "@permanentid=d19d547a1425fbb04186af3b728a61b674eec200651781ccc979df8f179b",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 173
+          }, {
+            "Expression" : "@permanentid=25f391812ccaf4bec226095723dba7a0015d0c41c69bd731fcc81d59a2bd",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 166
+          }, {
+            "Expression" : "@permanentid=6b79f5e1b292d9ea6ecc50e9754704367272339c2f1f035f928a20106dd9",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 163
+          }, {
+            "Expression" : "@permanentid=02b946667a189b63552dc65b48d55e931dd530dded3b90f23fef0b93212a",
+            "IsConstant" : false,
+            "IsDeterministic" : true,
+            "Modifier" : 128
+          } ],
+          "RankingFunctions" : [ ],
+          "QueryFunctions" : [ ],
+          "RankingOverrides" : [ ],
+          "Facets" : [ ],
+          "AutomaticFacetsRequest" : { }
+        },
+        "out" : {
+          "index" : "armlimitedproductionubhpo2y4-w180tn4p-Indexer-1-wgnm24jnfsfaxved5qtkhdcmiu",
+          "logEntryId" : "212539684819970313",
+          "serverTime" : 241,
+          "requestTime" : 462,
+          "totalCount" : 5626,
+          "totalCountFiltered" : 5626,
+          "groupByCount" : 0
+        }
+      }
+    }, {
+      "name" : "FacetResultPostProcessingEvaluationReport",
+      "description" : "Post process the result through the processors pipeline",
+      "duration" : 0,
+      "Index Scores" : [ ],
+      "children" : [ {
+        "name" : "FacetSense ML score assigning",
+        "description" : "Processing facet result: FacetSense ML score assigning",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Setting more values available",
+        "description" : "Processing facet result: Setting more values available",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Apply selection from request",
+        "description" : "Processing facet result: Apply selection from request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Adding optional facet IDs",
+        "description" : "Processing facet result: Adding optional facet IDs",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Freezing facet values if any",
+        "description" : "Processing facet result: Freezing facet values if any",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reordering values based on facet sense",
+        "description" : "Processing facet result: Reordering values based on facet sense",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Retaining selected values based on request",
+        "description" : "Processing facet result: Retaining selected values based on request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet range values based on sort criteria",
+        "description" : "Processing facet result: Reorder facet range values based on sort criteria",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values using custom sort",
+        "description" : "Processing facet result: Reorder facet values using custom sort",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values pushing selected values on top",
+        "description" : "Processing facet result: Reorder facet values pushing selected values on top",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Truncate extra values in request",
+        "description" : "Processing facet result: Truncate extra values in request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using index score",
+        "description" : "Processing facet result: Reorder facets using index score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using ML score",
+        "description" : "Processing facet result: Reorder facets using ML score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      } ]
+    }, {
+      "name" : "FacetResultPostProcessingEvaluationReport",
+      "description" : "Post process the result through the processors pipeline",
+      "duration" : 0,
+      "Index Scores" : [ ],
+      "children" : [ {
+        "name" : "FacetSense ML score assigning",
+        "description" : "Processing facet result: FacetSense ML score assigning",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Setting more values available",
+        "description" : "Processing facet result: Setting more values available",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Apply selection from request",
+        "description" : "Processing facet result: Apply selection from request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Adding optional facet IDs",
+        "description" : "Processing facet result: Adding optional facet IDs",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Freezing facet values if any",
+        "description" : "Processing facet result: Freezing facet values if any",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reordering values based on facet sense",
+        "description" : "Processing facet result: Reordering values based on facet sense",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Retaining selected values based on request",
+        "description" : "Processing facet result: Retaining selected values based on request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet range values based on sort criteria",
+        "description" : "Processing facet result: Reorder facet range values based on sort criteria",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values using custom sort",
+        "description" : "Processing facet result: Reorder facet values using custom sort",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facet values pushing selected values on top",
+        "description" : "Processing facet result: Reorder facet values pushing selected values on top",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Truncate extra values in request",
+        "description" : "Processing facet result: Truncate extra values in request",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using index score",
+        "description" : "Processing facet result: Reorder facets using index score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      }, {
+        "name" : "Reorder facets using ML score",
+        "description" : "Processing facet result: Reorder facets using ML score",
+        "duration" : 0,
+        "changed" : false,
+        "in" : [ ],
+        "out" : [ ]
+      } ]
+    } ]
+  },
+  "index" : "armlimitedproductionubhpo2y4-w180tn4p-Indexer-1-wgnm24jnfsfaxved5qtkhdcmiu",
   "indexRegion" : "us-east-1",
-  "indexToken" : "YXJtbGltaXRlZHByb2R1Y3Rpb251YmhwbzJ5NC13MTgwdG40cC1JbmRleGVyLTMtd2lyMnF6YmF1cGxlcHhmcG4zaGZ0d2NpdGE=",
+  "indexToken" : "YXJtbGltaXRlZHByb2R1Y3Rpb251YmhwbzJ5NC13MTgwdG40cC1JbmRleGVyLTEtd2dubTI0am5mc2ZheHZlZDVxdGtoZGNtaXU=",
   "refinedKeywords" : [ ],
   "triggers" : [ ],
   "termsToHighlight" : { },
